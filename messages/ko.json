@@ -5,11 +5,52 @@
   },
   "header": {
     "home": "홈",
-    "about": "소개"
+    "about": "소개",
+    "settings": "설정"
   },
   "home": {
     "title": "하나의 질문, 여러 AI의 답변",
     "subtitle": "여러 AI에 동시에 질문하고, 답변을 비교하여 최고의 결과물을 만들어 보세요.",
     "cta": "시작하기"
+  },
+  "settings": {
+    "title": "AI 모델 설정",
+    "description": "사용할 AI 프로바이더의 API 키를 등록하세요. 등록된 모델만 질문 시 활성화됩니다.",
+    "save": "저장",
+    "delete": "삭제",
+    "showKey": "키 보기",
+    "hideKey": "키 숨기기",
+    "apiKeyInput": "{provider} API 키 입력",
+    "providers": {
+      "openai": "OpenAI",
+      "anthropic": "Anthropic",
+      "google": "Google",
+      "xai": "xAI",
+      "perplexity": "Perplexity",
+      "mistral": "Mistral",
+      "groq": "Groq",
+      "cohere": "Cohere"
+    }
+  },
+  "chat": {
+    "inputPlaceholder": "AI에게 질문하세요...",
+    "send": "전송",
+    "sending": "전송 중...",
+    "noProviders": "등록된 AI 프로바이더가 없습니다.",
+    "noProvidersDescription": "설정 페이지에서 최소 하나의 AI 프로바이더 API 키를 등록해 주세요.",
+    "goToSettings": "설정으로 이동",
+    "streaming": "응답 중...",
+    "done": "완료",
+    "error": "오류 발생",
+    "errorMessage": "응답을 가져오지 못했습니다.",
+    "retry": "재시도",
+    "selectParagraphs": "문단을 클릭하여 편집창에 추가하세요",
+    "editorTitle": "편집창",
+    "editorPlaceholder": "위의 답변에서 문단을 선택하면 여기에 추가됩니다...",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "clear": "초기화",
+    "askQuestion": "질문을 입력하고 전송 버튼을 누르세요",
+    "registeredCount": "{count}개 AI 활성"
   }
 }

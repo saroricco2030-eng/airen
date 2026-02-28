@@ -4,7 +4,12 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
+  poweredByHeader: false,
+};
 
 const sentryConfig = withSentryConfig(withNextIntl(nextConfig), {
   org: process.env.SENTRY_ORG,

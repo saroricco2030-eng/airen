@@ -1,13 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
-import ChatInterface from "@/components/chat/ChatInterface";
+import SettingsContent from "./SettingsContent";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default async function HomePage({ params }: Props) {
+export default async function SettingsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ChatInterface />;
+  return <SettingsContent />;
 }

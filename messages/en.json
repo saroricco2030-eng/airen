@@ -5,11 +5,52 @@
   },
   "header": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "settings": "Settings"
   },
   "home": {
     "title": "One Question, Multiple AI Answers",
     "subtitle": "Ask multiple AIs simultaneously, compare their answers, and craft the best result.",
     "cta": "Get Started"
+  },
+  "settings": {
+    "title": "AI Model Settings",
+    "description": "Register API keys for the AI providers you want to use. Only registered models will be activated when asking questions.",
+    "save": "Save",
+    "delete": "Delete",
+    "showKey": "Show key",
+    "hideKey": "Hide key",
+    "apiKeyInput": "Enter {provider} API key",
+    "providers": {
+      "openai": "OpenAI",
+      "anthropic": "Anthropic",
+      "google": "Google",
+      "xai": "xAI",
+      "perplexity": "Perplexity",
+      "mistral": "Mistral",
+      "groq": "Groq",
+      "cohere": "Cohere"
+    }
+  },
+  "chat": {
+    "inputPlaceholder": "Ask your question to AI...",
+    "send": "Send",
+    "sending": "Sending...",
+    "noProviders": "No AI providers registered.",
+    "noProvidersDescription": "Please register at least one AI provider API key in the settings page.",
+    "goToSettings": "Go to Settings",
+    "streaming": "Responding...",
+    "done": "Done",
+    "error": "Error",
+    "errorMessage": "Failed to get response.",
+    "retry": "Retry",
+    "selectParagraphs": "Click paragraphs to add them to the editor",
+    "editorTitle": "Editor",
+    "editorPlaceholder": "Select paragraphs from the answers above to add them here...",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "askQuestion": "Enter your question and press send",
+    "registeredCount": "{count} AIs active"
   }
 }
