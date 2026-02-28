@@ -1,0 +1,15 @@
+{
+  "common": {
+    "appName": "AIren",
+    "tagline": "AI 집단지성 리서치 도구"
+  },
+  "header": {
+    "home": "홈",
+    "about": "소개"
+  },
+  "home": {
+    "title": "하나의 질문, 여러 AI의 답변",
+    "subtitle": "여러 AI에 동시에 질문하고, 답변을 비교하여 최고의 결과물을 만들어 보세요.",
+    "cta": "시작하기"
+  }
+}

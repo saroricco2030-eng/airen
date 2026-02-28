@@ -1,0 +1,15 @@
+{
+  "common": {
+    "appName": "AIren",
+    "tagline": "AI Collective Intelligence Research Tool"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "title": "One Question, Multiple AI Answers",
+    "subtitle": "Ask multiple AIs simultaneously, compare their answers, and craft the best result.",
+    "cta": "Get Started"
+  }
+}
