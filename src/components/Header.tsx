@@ -1,14 +1,18 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const t = useTranslations("header");
 
   return (
     <header className="glass fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4">
-      <Link href="/" className="text-xl font-bold tracking-tight">
-        <span className="text-primary">AI</span>
-        <span className="text-foreground">ren</span>
+      <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+        <Image src="/logo.svg" alt="AIren" width={28} height={28} className="rounded-md" />
+        <span>
+          <span className="text-primary">AI</span>
+          <span className="text-foreground">ren</span>
+        </span>
       </Link>
       <nav className="flex items-center gap-6">
         <Link

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1025"/>
+      <stop offset="100%" stop-color="#0D0D0F"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C4A050"/>
+    </linearGradient>
+    <linearGradient id="tri" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#1a1025"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <!-- Triangle -->
+  <polygon points="90,25 160,148 20,148" fill="url(#tri)" stroke="#C4A050" stroke-width="0.8" opacity="0.9"/>
+  <!-- Circle ring -->
+  <circle cx="90" cy="98" r="42" fill="none" stroke="url(#ring)" stroke-width="3" filter="url(#glow)"/>
+  <!-- Eye shape -->
+  <path d="M68,93 Q79,78 90,76 Q101,78 112,93 Q101,108 90,110 Q79,108 68,93Z"
+        fill="none" stroke="#A78BFA" stroke-width="1.2"/>
+  <!-- Iris -->
+  <circle cx="90" cy="93" r="10" fill="#1a1025" stroke="#A78BFA" stroke-width="0.8"/>
+  <!-- Pupil -->
+  <circle cx="90" cy="93" r="4.5" fill="#7C3AED"/>
+  <circle cx="90" cy="93" r="2" fill="#A78BFA"/>
+  <circle cx="88.5" cy="91.5" r="1.2" fill="#DDD6FE" opacity="0.8"/>
+</svg>

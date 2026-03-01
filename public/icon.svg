@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1025"/>
+      <stop offset="100%" stop-color="#0D0D0F"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C4A050"/>
+    </linearGradient>
+    <linearGradient id="tri" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#1a1025"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Triangle -->
+  <polygon points="16,4 28,26 4,26" fill="url(#tri)" stroke="#C4A050" stroke-width="0.3" opacity="0.9"/>
+  <!-- Circle ring -->
+  <circle cx="16" cy="17.5" r="7.5" fill="none" stroke="url(#ring)" stroke-width="1.2"/>
+  <!-- Eye shape -->
+  <path d="M12.2,16.5 Q14,14 16,13.8 Q18,14 19.8,16.5 Q18,19 16,19.2 Q14,19 12.2,16.5Z" fill="none" stroke="#A78BFA" stroke-width="0.6"/>
+  <!-- Iris -->
+  <circle cx="16" cy="16.5" r="2" fill="#1a1025" stroke="#A78BFA" stroke-width="0.4"/>
+  <!-- Pupil -->
+  <circle cx="16" cy="16.5" r="0.9" fill="#7C3AED"/>
+  <circle cx="15.7" cy="16.2" r="0.35" fill="#DDD6FE" opacity="0.8"/>
+</svg>

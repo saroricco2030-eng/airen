@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Purple radial gradient for background -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1025"/>
+      <stop offset="100%" stop-color="#0D0D0F"/>
+    </radialGradient>
+    <!-- Gold/purple gradient for the circle ring -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C4A050"/>
+    </linearGradient>
+    <!-- Triangle gradient -->
+    <linearGradient id="triGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="50%" stop-color="#2D1854"/>
+      <stop offset="100%" stop-color="#1a1025"/>
+    </linearGradient>
+    <!-- Inner triangle gradient -->
+    <linearGradient id="triInnerGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#5B21B6"/>
+      <stop offset="100%" stop-color="#3B1578"/>
+    </linearGradient>
+    <!-- Eye glow -->
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#C4A050"/>
+      <stop offset="100%" stop-color="#8B7532"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGrad)"/>
+
+  <!-- Outer decorative thin circle -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#C4A050" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Main triangle (outer) -->
+  <polygon points="256,72 438,388 74,388" fill="url(#triGrad)" stroke="url(#goldGrad)" stroke-width="2" opacity="0.9"/>
+
+  <!-- Inner triangle -->
+  <polygon points="256,120 400,365 112,365" fill="url(#triInnerGrad)" stroke="#C4A050" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Main circle ring -->
+  <circle cx="256" cy="270" r="120" fill="none" stroke="url(#ringGrad)" stroke-width="6" filter="url(#glow)"/>
+  <circle cx="256" cy="270" r="117" fill="none" stroke="#C4A050" stroke-width="1" opacity="0.4"/>
+  <circle cx="256" cy="270" r="123" fill="none" stroke="#C4A050" stroke-width="1" opacity="0.4"/>
+
+  <!-- Eye glow background -->
+  <ellipse cx="256" cy="255" rx="60" ry="60" fill="url(#eyeGlow)"/>
+
+  <!-- Stylized eye shape (almond) -->
+  <path d="M196,255 Q226,215 256,210 Q286,215 316,255 Q286,295 256,300 Q226,295 196,255Z"
+        fill="none" stroke="url(#ringGrad)" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Iris circle -->
+  <circle cx="256" cy="255" r="28" fill="none" stroke="#A78BFA" stroke-width="2"/>
+  <circle cx="256" cy="255" r="26" fill="#1a1025" opacity="0.8"/>
+
+  <!-- Pupil -->
+  <circle cx="256" cy="255" r="12" fill="#7C3AED"/>
+  <circle cx="256" cy="255" r="6" fill="#A78BFA"/>
+  <!-- Pupil highlight -->
+  <circle cx="252" cy="251" r="3" fill="#DDD6FE" opacity="0.8"/>
+
+  <!-- Iris detail lines -->
+  <line x1="256" y1="229" x2="256" y2="237" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+  <line x1="256" y1="273" x2="256" y2="281" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+  <line x1="232" y1="247" x2="237" y2="250" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+  <line x1="275" y1="250" x2="280" y2="247" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+  <line x1="237" y1="262" x2="232" y2="265" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+  <line x1="280" y1="265" x2="275" y2="262" stroke="#A78BFA" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Small decorative eyes on sides (from original) -->
+  <!-- Left eye -->
+  <path d="M108,260 Q123,248 138,260 Q123,272 108,260Z" fill="none" stroke="#C4A050" stroke-width="1" opacity="0.5"/>
+  <circle cx="123" cy="260" r="3" fill="#C4A050" opacity="0.5"/>
+  <!-- Right eye -->
+  <path d="M374,260 Q389,248 404,260 Q389,272 374,260Z" fill="none" stroke="#C4A050" stroke-width="1" opacity="0.5"/>
+  <circle cx="389" cy="260" r="3" fill="#C4A050" opacity="0.5"/>
+
+  <!-- Top ornament (small triangle) -->
+  <polygon points="256,90 264,106 248,106" fill="#C4A050" opacity="0.6"/>
+  <circle cx="256" cy="85" r="3" fill="#C4A050" opacity="0.5"/>
+
+  <!-- Bottom decorative element -->
+  <circle cx="256" cy="355" r="4" fill="#C4A050" opacity="0.5"/>
+  <circle cx="256" cy="370" r="2.5" fill="#C4A050" opacity="0.4"/>
+  <line x1="240" y1="355" x2="272" y2="355" stroke="#C4A050" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Ornamental curves at bottom (simplified baroque) -->
+  <path d="M180,388 Q200,375 220,382 Q238,388 256,380 Q274,388 292,382 Q312,375 332,388"
+        fill="none" stroke="#C4A050" stroke-width="1" opacity="0.35"/>
+  <path d="M160,395 Q190,380 220,390 Q240,398 256,388 Q272,398 292,390 Q322,380 352,395"
+        fill="none" stroke="#C4A050" stroke-width="0.7" opacity="0.25"/>
+
+  <!-- Thin radial lines from center (subtle) -->
+  <line x1="256" y1="150" x2="256" y2="170" stroke="#A78BFA" stroke-width="0.5" opacity="0.2"/>
+  <line x1="170" y1="310" x2="185" y2="300" stroke="#A78BFA" stroke-width="0.5" opacity="0.2"/>
+  <line x1="342" y1="310" x2="327" y2="300" stroke="#A78BFA" stroke-width="0.5" opacity="0.2"/>
+</svg>
